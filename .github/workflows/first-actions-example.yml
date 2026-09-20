@@ -5,8 +5,11 @@ jobs:
     first_job:
         runs-on: ubuntu:latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+          
         - name: welcome msg
-          run: echo "Hello, Good Morning!"
+          run: echo "Hello, Good Morning! and how are yo"
 
         - name: reading files on this repo and giving 
           run: ls -la
